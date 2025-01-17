@@ -1,0 +1,165 @@
+%-------------------------
+% Resume in Latex
+% Author : Kevin Wegman
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Kevin Wegman} & Email : \href{mailto:kevinwegman1993@gmail.com}{kevinwegman1993@gmail.com}\\
+  Senior Software Developer & Mobile : \href{tel:+16148433789}{+1-614-843-3789} \\
+\end{tabular*}
+
+
+%-----------Objective-----------------
+\section{Objective}
+  {Creative and dedicated engineer with extensive software development experience and passion for developing skills to improve my problem solving capabilities. Seeking an opportunity where my experience leading development of complex applications with multidisciplinary teams can provide value.}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Quantum Health}{Columbus, OH}
+    {Senior Software Developer}{November 2023 - Present}
+    \resumeItemListStart
+      \resumeItem{Integrated Application Development}
+        {Designed, implemented and tested an SSO system to significantly reduce new client onboarding and existing client maintenance overhead. The system supports integration with over 90 vendors and experiences millions of annual users. The new system was developed with a microservices architecture deployed to AWS with a PostgreSQL datastore, a VueJS UI, and multiple ASP.NET core APIs. }
+      \resumeItem{Data Integration}
+        {Design and maintain multiple data integration systems through event based (Apache Kafka) monitoring. Developed pipelines for data integration through AWS lambdas with Kafka event monitors, as well as custom data migration and analysis scripts. Architected event monitoring logs to track SSO usage and issues, and assisted in monitoring / resolution based on log information. }
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Battelle Memorial Institute}{Columbus, OH}
+      {Senior Data Scientist}{Feb 2016 - Aug 2023}
+      \resumeItemListStart
+        \resumeItem{Development Lead}
+          {Serve as development lead for \$10+ million annual project providing data analysis, modeling and simulation, and application development to analyze the risk of Chemical, Biological, Radiological, Nuclear and Explosive (CBRNE) terrorism attacks.}
+        \resumeItem{Agile Teamwork}
+          {Work with agile teams leading development of web-deployable applications to provide non-power users with the capability to interact with modeling capabilities, view complex modeling results, perform general data analysis, and generate figures and reports for decision makers and analysts. Application technology utilizes ASP.NET API web services, PostgreSQL databases, and VueJS with typescript user interfaces. }
+        \resumeItem{SLDC Maturity}
+          {Drive maturity of the SDLC process for both computational modeling and data analysis application development through adoption of best practices, institution of CI/CD pipelines in Azure Devops with gates for review / approval, and mentorship and coaching of 30+ multi-disciplinary team members in adaptive code development through design patterns and SOLID principles.}
+        \resumeItem{System Design}
+          {Architect a multi-system software solution for the development, management, execution and utilization of large and technically complex Probabilistic Risk Assessments (PRAs) deployed to AWS Government Cloud hosts.}
+        \resumeItem{Modeling and Simulation}
+          {Develop complex Monte-Carlo based computational models to assess CBRNE terrorism risk by collaborating with multi-disciplinary teams to adapt existing algorithms and methodologies with novel approaches. Areas of modeling include aerosol dispersion, food and water contamination / consumption, explosive hazard propagation, adversary behavior modeling, pathway and target vulnerability modeling.}
+        \resumeItem{Requirement Management}
+          {Work with government clients, stakeholders and internal product consumers to identify areas for capability expansion; architect and drive solutions for expansion of those capabilities resulting in more stable and maintainable processes.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Ohio State University}{Columbus, OH}
+      {Master of Science in Nuclear Engineering;  GPA: 3.9}{Aug 2014 -- May 2016}
+    \resumeSubheading
+    {The Ohio State University}{Columbus, OH}
+    {Bachelors of Science in Chemical Engineering;  GPA: 3.7}{Aug 2011 -- Dec 2014}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{Languages}{: C\#, C++, Python, SQL, JavaScript, Typescript, HTML/CSS, Java, Rust, XML, JSON, YAML} \\
+    \textbf{Frameworks and Libraries}{: ASP.NET, VueJS (2 and 3), NUnit, Moq, Vitest, Axios, Electron, Vuetify, Entity Framework, Razor, Dapper, MSSQL, PostgreSQL, PostGIS, Kafka, GDAL, GEOS} \\
+    \textbf{Developer Tools}{: Visual Studio, Git, Docker, Azure Devops, Github AE, Azure Portal, VS Code, Jetbrains IDEs, ArcGIS, QGIS}
+   }}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
